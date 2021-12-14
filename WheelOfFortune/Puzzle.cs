@@ -2148,7 +2148,7 @@ namespace WheelOfFortune
                 if (y == true)
                 {
                     //thePlayer won the round
-                    //**** reset tempPhrase
+                    p1CurrScore = p1CurrScore + 2000;
                     int theWinner = currPlayer + 1;
                     playerWhoWonDisplay.Text = "Player " + theWinner.ToString() + " Won Round " + roundNum.ToString() + "!";
 
@@ -2322,6 +2322,16 @@ namespace WheelOfFortune
             //brings the player back to the beginning
             hidePanels();
             startPanel.Show();
+            p1CurrScore = 0;
+            p2CurrScore = 0;
+            p3CurrScore = 0;
+            p1TotalScore = 0;
+            p2TotalScore = 0; ;
+            p3TotalScore = 0;
+            currPlayer = 0;
+            toTheNextRound.Text = "START THE NEXT ROUND!";
+            updatePlayerScores();
+            determineGuess.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
