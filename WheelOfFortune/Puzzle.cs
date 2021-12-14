@@ -3,18 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using System.Threading;
 
-/*12/4/21 Updated game so that the user can click new game, and choose between whether they want to upload the phrases or use ones already in the game.
- * The user can see the name of the file they choose to upload
- * When a file is uploaded the amount of phrases are counted, so that a random one can be choosen later.
- * the player can now enter their name and it will appear on the labels when they click begin
- * the code for getting an uploaded phrase and putting it into 2 arrays that will compare each other to see if it is solved was created
- * the empty phrase is shown on the board
- * category is displayed
- * player can get a value by clicking the spin button spin
- * if a player buys a vowel and gets it correct the player will lose $200 and is able to see the value on the board
- * 
- */
-//*****still need to update settings in the menu strip******
+
 
 namespace WheelOfFortune
 {
